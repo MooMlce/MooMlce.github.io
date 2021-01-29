@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/5ea8a36730.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+    <style>
+      @media (max-width:1000px) {
+        /*Reviews start*/
+        .reviews__items{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .reviews__box_wrap{
+          max-width: 450px;
+          display: none;
+        }
+        .reviews .dots{
+          text-align:center
+        }
+        .reviews .dot {
+          cursor: pointer;
+          height: 15px;
+          width: 15px;
+          margin: 0 2px;
+          background-color: #bbb;
+          border-radius: 50%;
+          display: inline-block;
+          transition: background-color 0.6s ease;
+        }
+        .reviews .active, .dot:hover {
+          background-color: #717171;
+        }
+        .reviews .slider_active{
+          display: block;
+        }
+        /*Reviews end*/
+      }
+    </style>
+  </head>
+  <body>
+      <!--Reviews start-->
+      <div class="reviews">
+
+        <h2>Отзывы о нас</h2>
+
+        <!--Reviews items start-->
+        <div class="reviews__items">
+
+          <div class="reviews__box_wrap slider">
+            <div class="reviews__box">
+              <time datetime="2020-02-24 12:42:00">2020-02-24 12:42:00</time>
+              <h4>Круто!</h4>
+              <p>
+                Ну наконец-то... Уровень, сервис, я пока ждал попил кофе и перекусил.
+                Очень ценю свое время и сервис,…
+              </p>
+              <p class="box_autor">
+                by Петр
+              </p>
+            </div>
+          </div>
+
+          <div class="reviews__box_wrap slider">
+            <div class="reviews__box">
+              <time datetime="2020-02-20 14:43:00">2020-02-20 14:43:00</time>
+              <h4>Интересная концепция. Скажу как человек связанный с искусством </h4>
+              <p>
+                Ждууууу...
+              </p>
+              <p class="box_autor">
+                by Елена
+              </p>
+            </div>
+          </div>
+
+          <div class="reviews__box_wrap slider">
+            <div class="reviews__box">
+              <time datetime="2020-02-20 14:43:00">2020-02-20 14:43:00</time>
+              <h4>Modern space</h4>
+              <p>
+                Одеваюсь давно в этой сети магазинов и всегда подгонку костюма
+                выполняли идеально по фигуре. А теперь…
+              </p>
+              <p class="box_autor">
+                by Алексей Богданович
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <!--Reviews items end-->
+        <div class="dots">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        <div class="button-success">
+          <a class="button-success__item"><span>Все отзывы</span></a>
+        </div>
+
+      </div>
+      <!--Reviews end-->
+
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("slider");
+      var dots = document.getElementsByClassName("dot");
+
+      for (i = 0; i < slides.length; i++) {
+        console.log(slides[i].classList[2] === 'slider_active')
+        if(slides[i].classList[2] === 'slider_active'){
+          slides[i].classList.toggle("slider_active");
+        }
+      }
+      slides[n-1].classList.toggle("slider_active");
+
+      for (i = 0; i < slides.length; i++) {
+        console.log(dots[i].classList[1] === 'active')
+        if(dots[i].classList[1] === 'active'){
+          dots[i].classList.toggle("active");
+        }
+      }
+      dots[n-1].classList.toggle("active");
+    }
+    </script>
+  </body>
+</html>
