@@ -1360,6 +1360,9 @@ footer>*{
   }
 
   @media (max-width:425px) {
+    h1{
+      font-size: 55px;
+    }
     /*Application form start*/
     .application{
       display: flex;
