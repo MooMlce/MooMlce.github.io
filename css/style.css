@@ -948,6 +948,9 @@ header{
       transition: 1s;
       font-size: 0;
     }
+    .team-company__box_wrap>img{
+      height: 200px;
+    }
     .team-company__box_wrap::before{
       content: "";
       position: absolute;
