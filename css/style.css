@@ -949,7 +949,7 @@ header{
       font-size: 0;
     }
     .team-company__box_wrap>img{
-      object-fit: cover;
+      object-fit: contain;
     }
     .team-company__box_wrap::before{
       content: "";
