@@ -1249,6 +1249,13 @@ footer>*{
       font-size: 30px;
     }
 
+    /*Button start*/
+    .button__items{
+      margin-right: 15px;
+      top: 15px;
+    }
+    /*Button end*/
+
     /*Advantages items start*/
     .advantages__items li{
       font-size: 20px;
