@@ -939,6 +939,7 @@ header{
     }
     .team-company__box{
       padding: 15px;
+      display: block;
     }
     .team-company__box_wrap>img{
       object-fit: contain;
@@ -950,6 +951,11 @@ header{
       color: black;
       transition: 1s;
       font-size: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-direction: column;
     }
     .team-company__box_wrap::before{
       content: "";
@@ -966,16 +972,7 @@ header{
     .team-company__box_wrap>p{
       letter-spacing: .2em;
       padding: 0 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      flex-direction: column;
       position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
       transition: 0.7s;
     }
     .team-company__box_wrap:hover p{
@@ -1268,13 +1265,17 @@ footer>*{
     /*Services end*/
 
     /*Team-company start*/
+    .team-company__box_wrap{
+      justify-content: flex-end;
+    }
     .team-company__box_wrap:hover::before{
       background-color: rgba(0, 0, 0, 0);
     }
     .team-company__box_wrap>p{
       font-size: 14px;
       background-color: rgba(255, 222, 0, 0.7);
-      top: 50%;
+      left: 0;
+      right: 0;
     }
     .team-company__box_wrap>p>span{
       font-size: 20px;
