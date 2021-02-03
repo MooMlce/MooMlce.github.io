@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5ea8a36730.js" crossorigin="anonymous"></script>
     <script src="js/button-menu.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>О компании</title>
   </head>
   <body>
@@ -33,7 +35,7 @@
         <!--Button start-->
 
         <!--To-top start-->
-        <div class="to-top">
+        <div id="toTop" class="to-top">
           <a href="#top" class="to-top__button"><i class="fas fa-chevron-up"></i></a>
         </div>
         <!--To-top end-->
@@ -208,9 +210,9 @@
         <!--Team-company items start-->
         <div class="team-company__items">
 
-          <div class="services__item">
+          <div class="team-company__box">
             <a href="#">
-              <img src="img/team-photo/girl-1.jpg" alt="PIZHON">
+              <img src="../Project_v2.0/img/team-photo/girl-1.jpg" alt="PIZHON">
               <p>
                 <span>Снежана <br>Юрьевна</span>
                 Главный мастер, <br>руководитель стаж 5 лет
@@ -218,9 +220,9 @@
             </a>
           </div>
 
-          <div class="services__item">
+          <div class="team-company__box">
             <a href="#">
-              <img src="img/team-photo/background-team.jpg" alt="PIZHON">
+              <img src="../Project_v2.0/img/team-photo/background-team.jpg" alt="PIZHON">
               <p>
                 <span>Алла <br>Владимировна</span>
                 Стаж 25 лет
@@ -228,9 +230,9 @@
             </a>
           </div>
 
-          <div class="services__item">
+          <div class="team-company__box">
             <a href="#">
-              <img src="img/team-photo/boy-1.png" alt="PIZHON">
+              <img src="../Project_v2.0/img/team-photo/boy-1.png" alt="PIZHON">
               <p>
                 <span>Евгений <br>Александрович</span>
                 Стилист, дизайнер, <br>совладелец
@@ -238,12 +240,22 @@
             </a>
           </div>
 
-          <div class="services__item">
+          <div class="team-company__box">
             <a href="#">
-              <img src="img/team-photo/boy-2.jpg" alt="PIZHON">
+              <img src="../Project_v2.0/img/team-photo/boy-2.jpg" alt="PIZHON">
               <p>
                 <span>Дмитрий <br>Александрович</span>
                 Стилист, руководитель, <br>совладелец
+              </p>
+            </a>
+          </div>
+
+          <div class="team-company__box">
+            <a href="#">
+              <img src="../Project_v2.0/img/team-photo/boy-3.jpg" alt="PIZHON">
+              <p>
+                <span>Максим <br>Александрович <br>(справа)</span>
+                Исполнительный <br>директор, совладелец
               </p>
             </a>
           </div>
@@ -315,6 +327,13 @@
 
     </footer>
     <!--Footer end-->
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="js/slider-team.js"></script>
+    <script src="js/to-top.js"></script>
 
   </body>
 </html>
