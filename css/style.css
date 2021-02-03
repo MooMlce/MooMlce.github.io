@@ -940,6 +940,9 @@ header{
     .team-company__box{
       padding: 15px;
     }
+    .team-company__box_wrap>img{
+      object-fit: contain;
+    }
     .team-company__box_wrap{
       position: relative;
       display: flex;
@@ -947,9 +950,6 @@ header{
       color: black;
       transition: 1s;
       font-size: 0;
-    }
-    .team-company__box_wrap>img{
-      object-fit: contain;
     }
     .team-company__box_wrap::before{
       content: "";
@@ -1267,14 +1267,19 @@ footer>*{
     }
     /*Services end*/
 
-    /*Team-company start*
+    /*Team-company start*/
+    .team-company__box_wrap:hover::before{
+      background-color: rgba(0, 0, 0, 0);
+    }
     .team-company__box_wrap>p{
       font-size: 14px;
       background-color: rgba(255, 222, 0, 0.7);
       top: 50%;
     }
     .team-company__box_wrap>p>span{
-
+      font-size: 20px;
+    }
+    .team-company__box_wrap:hover span{
       font-size: 20px;
     }
     /*Team-company end*/
@@ -1371,13 +1376,6 @@ footer>*{
         grid-template-columns: repeat(1, 1fr);
       }
     /*Shares end*/
-
-
-    /*Team-company start*
-    .team-company__items{
-      grid-template-columns: repeat(1, 1fr);
-    }
-    /*Team-company end*/
 
     /*Photo items start*/
     .photo__items{
