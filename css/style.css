@@ -939,9 +939,8 @@ header{
     }
     .team-company__box{
       padding: 15px;
-      max-height: 540px;
     }
-    .team-company__box>a{
+    .team-company__box_wrap{
       position: relative;
       display: flex;
       text-decoration: none;
@@ -949,7 +948,7 @@ header{
       transition: 1s;
       font-size: 0;
     }
-    .team-company__box a::before{
+    .team-company__box_wrap::before{
       content: "";
       position: absolute;
       top: 0;
@@ -958,10 +957,10 @@ header{
       right: 0;
       transition: 1s;
     }
-    .team-company__box a:hover::before{
+    .team-company__box_wrap:hover::before{
       background-color: rgba(255, 222, 0, 0.7);
     }
-    .team-company__box>a>p{
+    .team-company__box_wrap>p{
       letter-spacing: .2em;
       padding: 0 15px;
       display: flex;
@@ -976,16 +975,16 @@ header{
       right: 0;
       transition: 0.7s;
     }
-    .team-company__box a:hover p{
+    .team-company__box_wrap:hover p{
       font-size: 14px;
     }
-    .team-company__box span{
+    .team-company__box_wrap span{
       text-transform: uppercase;
       font-family: "Segoe UI",Arial,sans-serif;
       margin-bottom: 20px;
       transition: 0.7s linear;
     }
-    .team-company__box a:hover span{
+    .team-company__box_wrap:hover span{
       font-size: 24px;
     }
     /*Team-company items end*/
@@ -1266,12 +1265,12 @@ footer>*{
     /*Services end*/
 
     /*Team-company start*/
-    .team-company__box>a>p{
+    .team-company__box_wrap>p{
       font-size: 14px;
       background-color: rgba(255, 222, 0, 0.7);
       top: 50%;
     }
-    .team-company__box>a>p>span{
+    .team-company__box_wrap>p>span{
 
       font-size: 20px;
     }
