@@ -941,9 +941,6 @@ header{
       padding: 15px;
       display: block;
     }
-    .team-company__box_wrap>img{
-      object-fit: contain;
-    }
     .team-company__box_wrap{
       position: relative;
       display: flex;
@@ -971,7 +968,7 @@ header{
     }
     .team-company__box_wrap>p{
       letter-spacing: .2em;
-      padding: 0 15px;
+      padding: 0 15px 5px;
       position: absolute;
       transition: 0.7s;
     }
@@ -1351,6 +1348,21 @@ footer>*{
       right: 15px;
     }
     /*To top end*/
+
+    /*Team-company start*/
+    .team-company__box_wrap>p{
+      font-size: 10px;
+    }
+    .team-company__box_wrap>p:hover{
+      font-size: 10px;
+    }
+    .team-company__box_wrap>p>span{
+      font-size: 15px;
+    }
+    .team-company__box_wrap:hover span{
+      font-size: 15px;
+    }
+    /*Team-company end*/
   }
 
   @media (max-width:600px) {
