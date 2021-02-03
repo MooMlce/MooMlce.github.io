@@ -317,9 +317,9 @@ header{
 
     /*Menu start*/
     .menu{
+      height: 100vh;
       position: fixed;
       top: 0;
-      bottom: 0;
       right: 0;
       font-size: 14px;
       background-color: #231f20;
@@ -690,7 +690,7 @@ header{
       display: flex;
       flex-direction: column;
       text-align: center;
-      padding: 0 20px;
+      padding: 5px 20px;
       letter-spacing: .2em;
       justify-content: center;
       position: absolute;
