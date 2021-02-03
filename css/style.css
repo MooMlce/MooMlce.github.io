@@ -705,7 +705,6 @@ header{
     .services__item span{
       text-transform: uppercase;
       font-family: "Segoe UI",Arial,sans-serif;
-      margin-bottom: 20px;
       transition: 0.7s linear;
     }
     .services__item a:hover span{
@@ -1208,15 +1207,6 @@ footer>*{
     /*Services start*/
     .services__item{
       padding-bottom: 10px;
-    }
-    .services__item::before{
-      content: "";
-      background-color: #fde231;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 15px;
-      right: 15px;
     }
     .services__item p{
       position: relative;
