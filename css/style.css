@@ -1055,57 +1055,6 @@ header{
     }
     /*Photo items end*/
 
-    /*Photo open start*/
-    .photo{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transition: 0.4s;
-      visibility: hidden;
-      z-index: 3;
-    }
-    .photo>img{
-      width: 0;
-      height: 0;
-      max-width: 700px;
-      transition: 0.4s;
-      border-radius: 4px;
-    }
-    .img-close{
-      font-size: 0;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      cursor: pointer;
-      border: 0;
-      background-color: rgba(0, 0, 0, 0);
-      outline: none;
-      transition: 0.4s;
-    }
-    .photo_active{
-      visibility: visible;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-    .photo_active>img{
-      width: 100%;
-
-      height: auto;
-    }
-    .photo_active .img-close{
-      font-size: 30px;
-      border-radius: 100%;
-      background-color: #fde231;
-      width: 40px;
-      height: 40px;
-      padding: 5px;
-    }
-    /*Photo open end*/
-
   /*Photo box end*/
 
 

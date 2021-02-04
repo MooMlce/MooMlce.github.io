@@ -1,17 +1,36 @@
-var photoGl = document.getElementById('photoGl');
-var imgGl = document.getElementById('imgGl');
-var imgClass = document.getElementsByClassName("clickable");
+$(document).ready(function() {
 
-for (var i = 0; i < imgClass.length; i++) {
-  imgClass[i].addEventListener('click', imageClick, false);
-};
-function imageClick(e) {
-  imgGl.setAttribute('src', e.target.src);
-  photoGl.classList.toggle("photo_active");
-
-  window.onclick = function(event) {
-    if (event.target.matches('.photo')||event.target.matches('.img-close')) {
-    photoGl.classList.toggle("photo_active");
+  $('.image-popup-vertical-fit').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    mainClass: 'mfp-img-mobile',
+    image: {
+      verticalFit: true
     }
-  }
-};
+
+  });
+
+  $('.image-popup-fit-width').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    image: {
+      verticalFit: false
+    }
+  });
+
+  $('.image-popup-no-margins').magnificPopup({
+    type: 'image',
+    closeOnContentClick: true,
+    closeBtnInside: false,
+    fixedContentPos: true,
+    mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+    image: {
+      verticalFit: true
+    },
+    zoom: {
+      enabled: true,
+      duration: 300 // don't foget to change the duration also in CSS
+    }
+  });
+
+});
