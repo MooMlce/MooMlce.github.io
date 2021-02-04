@@ -663,7 +663,6 @@ header{
     .services__items{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      justify-content: center;
       margin-top: 50px;
     }
     .services__item{
@@ -847,6 +846,9 @@ header{
       .application>.message{
         grid-column: span 2;
       }
+      .application>.message>textarea{
+        max-width:468px;
+      }
       /*Application form items end*/
 
     .application__active{
@@ -933,6 +935,9 @@ header{
     text-align: center;
     grid-column-gap: 30px;
     grid-row-gap: 20px;
+  }
+  .review__form>.message>textarea{
+    max-width: 1165px;
   }
   .review__form h4,.review__form .subject,.review__form .message{
     grid-column: span 2;
