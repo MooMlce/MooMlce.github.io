@@ -1065,15 +1065,13 @@ header{
       bottom: 0;
       left: 0;
       right: 0;
-      transition: 0.4s;
       visibility: hidden;
       z-index: 3;
     }
     .photo>img{
-      width: 0;
-      height: 0;
+      width: 100%;
+      height: auto;
       max-width: 700px;
-      transition: 0.4s;
       border-radius: 4px;
     }
     .img-close{
@@ -1090,11 +1088,7 @@ header{
     .photo_active{
       visibility: visible;
       background-color: rgba(0, 0, 0, 0.5);
-    }
-    .photo_active>img{
-      width: 100%;
-
-      height: auto;
+      transition: 0.4s;
     }
     .photo_active .img-close{
       font-size: 30px;

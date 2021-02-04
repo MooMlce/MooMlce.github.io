@@ -16,11 +16,8 @@ function imageClick(e) {
       imgGl.style.width = "";
     }
   }
-  setTimeout(test, 145);
-};
-function test(){
   if (imgGl.width > window.innerHeight){
     imgGl.style.height = "100%";
     imgGl.style.width = "auto";
   }
-}
+};
