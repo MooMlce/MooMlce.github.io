@@ -11,7 +11,16 @@ function imageClick(e) {
 
   window.onclick = function(event) {
     if (event.target.matches('.photo')||event.target.matches('.img-close')) {
-    photoGl.classList.toggle("photo_active");
+      photoGl.classList.toggle("photo_active");
+      imgGl.style.height = "";
+      imgGl.style.width = "";
     }
   }
+  setTimeout(test, 145);
 };
+function test(){
+  if (imgGl.width > window.innerHeight){
+    imgGl.style.height = "100%";
+    imgGl.style.width = "auto";
+  }
+}
