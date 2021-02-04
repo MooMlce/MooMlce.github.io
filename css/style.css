@@ -331,8 +331,8 @@ header{
 
     /*Menu start*/
     .menu{
-      height: 100vh;
       position: fixed;
+      bottom: 0;
       top: 0;
       right: 0;
       font-size: 14px;
