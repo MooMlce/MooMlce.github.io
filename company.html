@@ -11,7 +11,7 @@
     <script src="https://kit.fontawesome.com/5ea8a36730.js" crossorigin="anonymous"></script>
     <script src="js/button-menu.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Новости</title>
+    <title>О компании</title>
   </head>
   <body>
 
@@ -48,10 +48,10 @@
 
             <!--Menu nav start-->
             <div class="menu__nav">
-              <a href="company.html" class="menu__link"><span>О компании</span></a>
+              <a href="company.html" class="menu__link menu__active"><span>О компании</span></a>
               <a href="work-examples.html" class="menu__link"><span>Наши работы</span></a>
               <a href="services.html" class="menu__link"><span>Услуги</span></a>
-              <a href="news.html" class="menu__link menu__active"><span>Новости</span></a>
+              <a href="news.html" class="menu__link"><span>Новости</span></a>
               <a href="blog.html" class="menu__link"><span>Блог</span></a>
               <a href="reviews.html" class="menu__link"><span>Отзывы</span></a>
               <a href="prices.html" class="menu__link"><span>Цены</span></a>
@@ -102,71 +102,170 @@
 
       <!--Intro start-->
       <div class="main__intro" style="background-image: url('img/uslugi/bak-all.jpg');">
-        <h1>Новости</h1>
+        <h1 class="company__title">О компании</h1>
       </div>
       <!--Intro end-->
 
 
-      <!--Reviews start-->
-      <div class="reviews">
+      <!-- Description start-->
+      <section class="description">
 
         <!--Main-nav start-->
         <div class="main__nav">
-          <p><a href="index.html">Главная</a> | Новости</p>
+          <p><a href="index.html">Главная</a> | О компании</p>
         </div>
         <!--Main-nav end-->
 
-        <p class="subtitle">НОВОСТИ</p>
-        <h2>Последние новости компании</h2>
+        <!--Description head start-->
+        <div class="description__head">
+          <p class="description__subtitle">
+            MODERN SPACE
+          </p>
+          <h2 class="description__title">
+            PIZHON atelier - <span>Современно.</span> Качественно. Стильно.
+          </h2>
+        </div>
+        <!--Description head end-->
 
-        <!--Reviews items start-->
-        <div class="reviews__items">
+        <!--Description-company content start-->
+        <div class="description-company__content">
+          <p>
+            Бренд PIZHON занимает лидирующее место на рынке ритейла одежды и услуг и
+            пользуется высоким доверием у клиентов.
+          </p>
 
-          <div class="reviews__box_wrap">
-            <div class="reviews__box">
-              <time datetime="2020-02-18">18 FEBRUARY 2020</time>
-              <h4>Скоро открытие!</h4>
+          <p>
+            <em>Pizhon atelier</em> — Первое современное ателье в Беларуси люкс класса в центре
+            столицы <strong>с европейской концепцией</strong>.
+          </p>
+
+          <p>
+            Ателье совмещено с 2-ухуэтажной кофейней Rivoli.
+            Наша компания выполняет на профессиональном уровне услуги по пошиву одежды,
+            ремонту одежды, подшиву вашего изделия под фигуру, срочный ремонт одежды и
+            другие виды услуг.
+          </p>
+
+          <p>
+            ВЫ получаете услуги высокого качества по минимально возможной цене. Все это
+            - благодаря большому опыту наших дизайнеров, портных, закройщиков и современному
+            оборудованию. Каждая поставленная задача перед нами выполняется с гениальной
+            точностью и максимальным усердием
+          </p>
+
+          <p>
+            ...
+          </p>
+
+          <p>
+            Ателье  ценит каждого нашего клиента, учитывает все его пожелания и постоянно
+            повышает уровень сервиса. У нас действуют бонусные программы.
+          </p>
+
+          <p>
+            Ателье совмещено с кофейней, в которой вкуснейший кофе итальянского бренда #illy
+            и круасcаны.<br>
+            Теперь ваше пребывание и ожидание не будем томным, а в приятной атмосфере, с
+            высочайшим сервисом и специалистами.
+          </p>
+
+          <p>
+            Цель и миссия ателье: избавить людей от подвальных мастерских и при этом не
+            всегда высокого уровня, дать человеку прожить этот процесс с эмоцией и в удобной
+            локации.
+          </p>
+
+        </div>
+        <!--Description-company content end-->
+
+      </section>
+      <!-- Description end-->
+
+
+      <!--Advantages start-->
+      <div class="advantages">
+        <h2>Наши преимущества</h2>
+
+        <!--Advantages items start-->
+        <ul class="advantages__items">
+          <li class="fas fa-users">Специалисты</li>
+          <li class="fa fa-scissors">Качество</li>
+          <li class="far fa-calendar">Сроки</li>
+          <li class="far fa-credit-card">Стоимость</li>
+          <li class="fa fa-map-marker">Локация</li>
+          <li class="fa fa-handshake">Сервис</li>
+          <li class="fa fa-thumb-tack">Материалы</li>
+          <li class="fa fa-truck">Доставка</li>
+        </ul>
+        <!--Advantages items end-->
+
+      </div>
+      <!--Advantages end-->
+
+
+      <!--Team-company start-->
+      <div class="team-company">
+        <p class="subtitle">ЗНАКОМЬТЕСЬ</p>
+        <h2>Наша <span>команда</span></h2>
+
+        <!--Team-company items start-->
+        <div class="team-company__items">
+
+          <div class="team-company__box">
+            <div class="team-company__box_wrap">
+              <img src="img/team-photo/girl-1.jpg" alt="PIZHON">
               <p>
-                Скоро открытие для ВСЕХ!
+                <span>Снежана <br>Юрьевна</span><br>
+                Главный мастер, <br>руководитель стаж 5 лет
               </p>
-              <a href="#" class="box_autor">
-                Читать далее
-              </a>
             </div>
           </div>
 
-          <div class="reviews__box_wrap">
-            <div class="reviews__box">
-              <time datetime="2020-02-18">18 FEBRUARY 2020</time>
-              <h4>Скидочная система!</h4>
+          <div class="team-company__box">
+            <div class="team-company__box_wrap">
+              <img src="img/team-photo/background-team.jpg" alt="PIZHON">
               <p>
-                Для всех клиентов сети магазинов ПИЖОН скидка на все виды работа
-                10% по картам #pizhonclub .
+                <span>Алла <br>Владимировна</span><br>
+                Стаж 25 лет
               </p>
-              <a href="#" class="box_autor">
-                Читать далее
-              </a>
             </div>
           </div>
 
-          <div class="reviews__box_wrap">
-            <div class="reviews__box">
-              <time datetime="2020-02-18">18 FEBRUARY 2020</time>
-              <h4>Сервис!</h4>
+          <div class="team-company__box">
+            <div class="team-company__box_wrap">
+              <img src="img/team-photo/boy-1.png" alt="PIZHON">
               <p>
-
+                <span>Евгений <br>Александрович</span><br>
+                Стилист, дизайнер, <br>совладелец
               </p>
-              <a href="#" class="box_autor">
-                Читать далее
-              </a>
+            </div>
+          </div>
+
+          <div class="team-company__box">
+            <div class="team-company__box_wrap">
+              <img src="img/team-photo/boy-2.jpg" alt="PIZHON">
+              <p>
+                <span>Дмитрий <br>Александрович</span><br>
+                Стилист, руководитель, <br>совладелец
+              </p>
+            </div>
+          </div>
+
+          <div class="team-company__box">
+            <div class="team-company__box_wrap">
+              <img src="img/team-photo/boy-3.jpg" alt="PIZHON">
+              <p>
+                <span>Максим <br>Александрович <br>(справа)</span><br>
+                Исполнительный <br>директор, совладелец
+              </p>
             </div>
           </div>
 
         </div>
-        <!--Reviews items end-->
-
+        <!--Team-company items end-->
       </div>
-      <!--Reviews end-->
+      <!--Team-company end-->
+
 
     </main>
     <!--Main end-->
@@ -229,11 +328,13 @@
 
     </footer>
     <!--Footer end-->
-  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="slick/slick.min.js"></script>
 
-  <script src="js/slider.js"></script>
-  <script src="js/to-top.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick/slick.min.js"></script>
+
+    <script src="js/slider-team.js"></script>
+    <script src="js/to-top.js"></script>
+
   </body>
 </html>

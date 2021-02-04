@@ -18,6 +18,11 @@ body{
 a:focus, button:focus{
   outline: 1px solid gray;
 }
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 
 /*Same styles start*/
 
@@ -39,6 +44,12 @@ h2>span{
   font-family: "Segoe UI",Arial,sans-serif;
   color: DarkKhaki;
 }
+h4{
+  font-size: 24px;
+  font-family: "Segoe UI",Arial,sans-serif;
+  font-weight: normal;
+  margin: 24px 0 0;
+}
 img{
   display: inline-block;
   max-width: 100%;
@@ -52,8 +63,7 @@ img{
   text-align: center;
   text-transform: uppercase;
 }
-.name input, .phone input, .message input, .message textarea{
-  box-shadow: 0;
+form input, form textarea{
   border: 0;
   border-bottom: 1px solid;
   width: 100%;
@@ -63,6 +73,12 @@ img{
   letter-spacing: .2em;
   background-color: rgba(0, 0, 0, 0);
   outline: none;
+}
+form textarea{
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 200px;
+  min-height: 60px;
 }
 
 /*Button success start*/
@@ -277,8 +293,6 @@ header{
       top: 5px;
       transition:0.5s;
     }
-
-
     /*Button end*/
 
 
@@ -490,6 +504,7 @@ header{
     padding: 150px 0;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
   }
   /*Intro main end*/
 
@@ -503,11 +518,6 @@ header{
     max-width: 1280px;
     margin: 0 auto;
     padding: 80px 0;
-  }
-  .description ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
   }
   .description>.main__nav{
     grid-column: span 2;
@@ -837,12 +847,6 @@ header{
       .application>.message{
         grid-column: span 2;
       }
-      .application>.message>textarea{
-        max-width: 100%;
-        min-width: 100%;
-        max-height: 200px;
-        min-height: 60px;
-      }
       /*Application form items end*/
 
     .application__active{
@@ -899,12 +903,6 @@ header{
       line-height: 2;
       letter-spacing: .4em;
     }
-    .reviews__box h4{
-      font-size: 24px;
-      font-family: "Segoe UI",Arial,sans-serif;
-      font-weight: normal;
-      margin: 24px 0 0;
-    }
     .reviews__box p:nth-child(3){
       line-height: 2;
       letter-spacing: .05em;
@@ -923,6 +921,26 @@ header{
     align-self: center;
   }
   /*Reviews end*/
+
+
+  /*Review form start*/
+  .review__form{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 15px 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+  }
+  .review__form h4,.review__form .subject,.review__form .message{
+    grid-column: span 2;
+  }
+  .review__form .button-success__item{
+    margin-top: 30px;
+  }
+  /*Review form end*/
 
 
   /*Team-company start*/
@@ -1084,6 +1102,101 @@ header{
     /*Photo open end*/
 
   /*Photo box end*/
+
+
+  /*Price start*/
+  .price{
+    padding: 80px 0;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+    /*Price table start*/
+      .price__table{
+        text-align: center;
+        font-weight: 300;
+        color: #111111;
+        margin-top: 50px;
+        width: 100%;
+        border-spacing:0;
+      }
+      .price__table th{
+        font-weight: 500;
+        color: black;
+      }
+      .price__table th,.price__table td{
+        padding: 15px;
+        border-top: 1px solid #d7d7d7;
+      }
+    /*Price table end*/
+
+
+    /*Price content start*/
+      .price__content{
+        padding: 40px 15px 0;
+      }
+      .price__content p{
+        margin-top: 20px;
+      }
+      .price__content p,.price__content ul{
+        line-height: 2.14286;
+        letter-spacing: .05em;
+        color:#111111;
+      }
+    /*Price content end*/
+
+  /*Price end*/
+
+
+  /*Contacts start*/
+  .contacts{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 80px 0;
+  }
+    /*Contacts items start*/
+    .contacts__items{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .contacts__box_wrap{
+      width: calc(1280px/3);
+      padding: 15px;
+    }
+    .contacts__box{
+      height: 100%;
+      padding: 50px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      font-size: 13px;
+      text-align: center;
+      background-color: #fde231;
+    }
+    .contacts__box ul{
+      margin-top: 40px;
+      line-height: 2;
+    }
+    .contacts__box a{
+      font-size: 14px;
+      transition: 0.5s;
+      color: #111111;
+    }
+    .contacts__link{
+      transition: 0.5s;
+    }
+    .contacts__link:hover, .contacts__link:hover a{
+      color: #95904e;
+      transform: scale(1.5);
+    }
+    .contacts__box i::before{
+      margin: 0;
+      font-size: 60px;
+    }
+    /*Contacts items end*/
+
+  /*Contacts end*/
 
 /*Main end*/
 
@@ -1324,44 +1437,6 @@ footer>*{
     /*Shares end*/
   }
 
-  @media (max-width:425px) {
-    h1{
-      font-size: 55px;
-    }
-    .company__title{
-      font-size: 40px;
-    }
-    /*Application form start*/
-    .application{
-      display: flex;
-      flex-direction: column;
-    }
-    /*Application form end*/
-
-    /*To top start*/
-    .to-top{
-      position: fixed;
-      bottom: 15px;
-      right: 15px;
-    }
-    /*To top end*/
-
-    /*Team-company start*/
-    .team-company__box_wrap>p{
-      font-size: 10px;
-    }
-    .team-company__box_wrap>p:hover{
-      font-size: 10px;
-    }
-    .team-company__box_wrap>p>span{
-      font-size: 15px;
-    }
-    .team-company__box_wrap:hover span{
-      font-size: 15px;
-    }
-    /*Team-company end*/
-  }
-
   @media (max-width:600px) {
     /*Services start*/
     .services__items{
@@ -1395,6 +1470,67 @@ footer>*{
       grid-template-columns:1fr;
     }
     /*Photo items end*/
+
+    /*Price table start*/
+      .price__table{
+        font-size: 14px;
+      }
+    /*Price table end*/
+  }
+
+  @media (max-width:425px) {
+    h1{
+      font-size: 55px;
+    }
+    .company__title{
+      font-size: 40px;
+    }
+
+    .contacts__title{
+      font-size: 45px;
+    }
+    /*Application form start*/
+    .application{
+      display: flex;
+      flex-direction: column;
+    }
+    /*Application form end*/
+
+    /*To top start*/
+    .to-top{
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+    }
+    /*To top end*/
+
+    /*Team-company start*/
+    .team-company__box_wrap>p{
+      font-size: 10px;
+    }
+    .team-company__box_wrap>p:hover{
+      font-size: 10px;
+    }
+    .team-company__box_wrap>p>span{
+      font-size: 15px;
+    }
+    .team-company__box_wrap:hover span{
+      font-size: 15px;
+    }
+    /*Team-company end*/
+
+    /*Review form start*/
+    .review__form{
+      display: flex;
+      flex-direction: column;
+    }
+    /*Review form end*/
+
+    /*Price table start*/
+      .price__table{
+        font-size: 10px;
+      }
+    /*Price table end*/
   }
 
 

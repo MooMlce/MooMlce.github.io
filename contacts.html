@@ -3,15 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fonts/flaticon.css">
     <link rel="icon" href="img/ico.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5ea8a36730.js" crossorigin="anonymous"></script>
     <script src="js/button-menu.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Новости</title>
+    <title>Контакты</title>
   </head>
   <body>
 
@@ -51,11 +50,11 @@
               <a href="company.html" class="menu__link"><span>О компании</span></a>
               <a href="work-examples.html" class="menu__link"><span>Наши работы</span></a>
               <a href="services.html" class="menu__link"><span>Услуги</span></a>
-              <a href="news.html" class="menu__link menu__active"><span>Новости</span></a>
+              <a href="news.html" class="menu__link"><span>Новости</span></a>
               <a href="blog.html" class="menu__link"><span>Блог</span></a>
               <a href="reviews.html" class="menu__link"><span>Отзывы</span></a>
               <a href="prices.html" class="menu__link"><span>Цены</span></a>
-              <a href="contacts.html" class="menu__link"><span>Контакты</span></a>
+              <a href="contacts.html" class="menu__link menu__active"><span>Контакты</span></a>
             </div>
             <!--Menu nav end-->
 
@@ -101,72 +100,84 @@
     <main>
 
       <!--Intro start-->
-      <div class="main__intro" style="background-image: url('img/uslugi/bak-all.jpg');">
-        <h1>Новости</h1>
+      <div class="main__intro" style="background-image: url('img/background-contact.jpg');">
+        <h1 class="contacts__title">Контакты</h1>
       </div>
       <!--Intro end-->
 
 
-      <!--Reviews start-->
-      <div class="reviews">
+      <!--Contacts start-->
+      <div class="contacts">
 
         <!--Main-nav start-->
         <div class="main__nav">
-          <p><a href="index.html">Главная</a> | Новости</p>
+          <p><a href="index.html">Главная</a> | Контакты</p>
         </div>
         <!--Main-nav end-->
 
-        <p class="subtitle">НОВОСТИ</p>
-        <h2>Последние новости компании</h2>
+        <p class="subtitle">Контакты</p>
+        <h2>Наши контакты</h2>
 
-        <!--Reviews items start-->
-        <div class="reviews__items">
-
-          <div class="reviews__box_wrap">
-            <div class="reviews__box">
-              <time datetime="2020-02-18">18 FEBRUARY 2020</time>
-              <h4>Скоро открытие!</h4>
-              <p>
-                Скоро открытие для ВСЕХ!
-              </p>
-              <a href="#" class="box_autor">
-                Читать далее
-              </a>
+        <!--Contacts items start-->
+        <div class="contacts__items">
+          <div class="contacts__box_wrap">
+            <div class="contacts__box">
+              <i class="flaticon-cellphone"></i>
+              <ul>
+                <li class="contacts__link"><a href="tel:37544XXXXXX">+375(33)xxx-xx-xx</a></li>
+                <li class="contacts__link"><a href="tel:37544XXXXXX">+375(33)xxx-xx-xx</a></li>
+              </ul>
             </div>
           </div>
-
-          <div class="reviews__box_wrap">
-            <div class="reviews__box">
-              <time datetime="2020-02-18">18 FEBRUARY 2020</time>
-              <h4>Скидочная система!</h4>
-              <p>
-                Для всех клиентов сети магазинов ПИЖОН скидка на все виды работа
-                10% по картам #pizhonclub .
-              </p>
-              <a href="#" class="box_autor">
-                Читать далее
-              </a>
+          <div class="contacts__box_wrap">
+            <div class="contacts__box">
+              <i class="flaticon-up-arrow-with-house-shape-outlined-symbol"></i>
+              <ul>
+                <li>
+                  пр-т Независимости, 40<br>
+                  (отдельный вход, на 2 этаже, вход через кофейню Rivoli)
+                </li>
+              </ul>
             </div>
           </div>
-
-          <div class="reviews__box_wrap">
-            <div class="reviews__box">
-              <time datetime="2020-02-18">18 FEBRUARY 2020</time>
-              <h4>Сервис!</h4>
-              <p>
-
-              </p>
-              <a href="#" class="box_autor">
-                Читать далее
-              </a>
+          <div class="contacts__box_wrap">
+            <div class="contacts__box">
+              <i class="flaticon-chat-oval-speech-bubbles-symbol"></i>
+              <ul>
+                <li class="contacts__link"><a href="mailTo:test@pizon.by">test@pizon.by</a></li>
+                <li class="contacts__link"><a href="mailTo:test@gmail.com">test@gmail.com</a></li>
+              </ul>
             </div>
           </div>
-
+          <div class="contacts__box_wrap">
+            <div class="contacts__box">
+              <i class="flaticon-nine-oclock-on-circular-clock"></i>
+              <ul>
+                <li>
+                  Время работы:
+                </li>
+                <li>
+                  с 10.00 до 20.00 ежедневно
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contacts__box_wrap">
+            <div class="contacts__box">
+              <i class="flaticon-planetary-grid-symbol"></i>
+              <ul>
+                <li class="contacts__link"><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+                <li class="contacts__link"><a href="https://web.telegram.org/" target="_blank">Telegram</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <!--Reviews items end-->
+        <!--Contacts items end-->
 
       </div>
-      <!--Reviews end-->
+      <!--Contacts end-->
+      <script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A96222e3dc5f880dea64e6c1d3af6d84578e0eb374c9629d99ae4e20c476025a9&amp;width=100%25&amp;height=570&amp;lang=ru_RU&amp;scroll=true"></script>
+
 
     </main>
     <!--Main end-->
@@ -231,9 +242,7 @@
     <!--Footer end-->
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="slick/slick.min.js"></script>
 
-  <script src="js/slider.js"></script>
   <script src="js/to-top.js"></script>
   </body>
 </html>

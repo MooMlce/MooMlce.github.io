@@ -4,14 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/ico.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="preconnect" type="text/css" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5ea8a36730.js" crossorigin="anonymous"></script>
     <script src="js/button-menu.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Новости</title>
+    <title>Отзывы</title>
   </head>
   <body>
 
@@ -51,9 +49,9 @@
               <a href="company.html" class="menu__link"><span>О компании</span></a>
               <a href="work-examples.html" class="menu__link"><span>Наши работы</span></a>
               <a href="services.html" class="menu__link"><span>Услуги</span></a>
-              <a href="news.html" class="menu__link menu__active"><span>Новости</span></a>
+              <a href="news.html" class="menu__link"><span>Новости</span></a>
               <a href="blog.html" class="menu__link"><span>Блог</span></a>
-              <a href="reviews.html" class="menu__link"><span>Отзывы</span></a>
+              <a href="reviews.html" class="menu__link menu__active"><span>Отзывы</span></a>
               <a href="prices.html" class="menu__link"><span>Цены</span></a>
               <a href="contacts.html" class="menu__link"><span>Контакты</span></a>
             </div>
@@ -101,8 +99,8 @@
     <main>
 
       <!--Intro start-->
-      <div class="main__intro" style="background-image: url('img/uslugi/bak-all.jpg');">
-        <h1>Новости</h1>
+      <div class="main__intro" style="background-image: url('img/background.jpg');">
+        <h1>Отзывы</h1>
       </div>
       <!--Intro end-->
 
@@ -112,53 +110,54 @@
 
         <!--Main-nav start-->
         <div class="main__nav">
-          <p><a href="index.html">Главная</a> | Новости</p>
+          <p><a href="index.html">Главная</a> | Отзывы</p>
         </div>
         <!--Main-nav end-->
 
-        <p class="subtitle">НОВОСТИ</p>
-        <h2>Последние новости компании</h2>
+        <p class="subtitle">Отзывы</p>
+        <h2>О нашей работе</h2>
 
         <!--Reviews items start-->
         <div class="reviews__items">
 
           <div class="reviews__box_wrap">
             <div class="reviews__box">
-              <time datetime="2020-02-18">18 FEBRUARY 2020</time>
-              <h4>Скоро открытие!</h4>
+              <time datetime="2020-02-24 12:42:00">2020-02-24 12:42:00</time>
+              <h4>Круто!</h4>
               <p>
-                Скоро открытие для ВСЕХ!
+                Ну наконец-то... Уровень, сервис, я пока ждал попил кофе и перекусил.
+                Очень ценю свое время и сервис,…
               </p>
-              <a href="#" class="box_autor">
-                Читать далее
-              </a>
+              <p class="box_autor">
+                by Петр
+              </p>
             </div>
           </div>
 
           <div class="reviews__box_wrap">
             <div class="reviews__box">
-              <time datetime="2020-02-18">18 FEBRUARY 2020</time>
-              <h4>Скидочная система!</h4>
+              <time datetime="2020-02-20 14:43:00">2020-02-20 14:43:00</time>
+              <h4>Интересная концепция. Скажу как человек связанный с искусством </h4>
               <p>
-                Для всех клиентов сети магазинов ПИЖОН скидка на все виды работа
-                10% по картам #pizhonclub .
+                Ждууууу...
               </p>
-              <a href="#" class="box_autor">
-                Читать далее
-              </a>
+              <p class="box_autor">
+                by Елена
+              </p>
             </div>
           </div>
 
           <div class="reviews__box_wrap">
             <div class="reviews__box">
-              <time datetime="2020-02-18">18 FEBRUARY 2020</time>
-              <h4>Сервис!</h4>
+              <time datetime="2020-02-20 14:43:00">2020-02-20 14:43:00</time>
+              <h4>Modern space</h4>
               <p>
-
+                Одеваюсь давно в этой сети магазинов и всегда подгонку костюма
+                выполняли идеально по фигуре. А теперь…
               </p>
-              <a href="#" class="box_autor">
-                Читать далее
-              </a>
+              <p class="box_autor">
+                by Алексей Богданович
+              </p>
             </div>
           </div>
 
@@ -167,6 +166,34 @@
 
       </div>
       <!--Reviews end-->
+
+      <!--Review form start-->
+      <form class="review__form">
+
+        <h4>Оставьте отзыв</h4>
+
+        <div class="name">
+          <input id="name__review" type="text" name="name" placeholder="Имя">
+        </div>
+
+        <div class="email">
+          <input id="email__review" type="email" name="email" placeholder="Email">
+        </div>
+
+        <div class="subject">
+          <input id="subject__review" type="text" name="subject" placeholder="Тема">
+        </div>
+
+        <div class="message">
+          <textarea id="message__review" name="message" placeholder="Сообщение"></textarea>
+        </div>
+
+        <div class="button-success">
+          <button type="submit" name="button-success" class="button-success__item"><span>Отправить</span></button>
+        </div>
+
+      </form>
+      <!--Review form end-->
 
     </main>
     <!--Main end-->
@@ -231,9 +258,7 @@
     <!--Footer end-->
   <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="slick/slick.min.js"></script>
 
-  <script src="js/slider.js"></script>
   <script src="js/to-top.js"></script>
   </body>
 </html>
