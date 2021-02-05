@@ -961,11 +961,9 @@ header{
     }
     .team-company__box{
       padding: 15px;
-      display: block;
     }
     .team-company__box_wrap{
       position: relative;
-      display: flex;
       text-decoration: none;
       color: black;
       transition: 1s;
@@ -1383,7 +1381,7 @@ footer>*{
       left: 0;
       right: 0;
     }
-    .team-company__box_wrap>p:hover{
+    .team-company__box_wrap:hover p{
       font-size: 13px;
     }
     .team-company__box_wrap>p>span{
@@ -1507,7 +1505,7 @@ footer>*{
     .team-company__box_wrap>p{
       font-size: 10px;
     }
-    .team-company__box_wrap>p:hover{
+    .team-company__box_wrap:hover p{
       font-size: 10px;
     }
     .team-company__box_wrap>p>span{
