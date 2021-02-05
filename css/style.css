@@ -846,9 +846,6 @@ header{
       .application>.message{
         grid-column: span 2;
       }
-      .application>.message>textarea{
-        max-width:468px;
-      }
       /*Application form items end*/
 
     .application__active{
@@ -935,9 +932,6 @@ header{
     text-align: center;
     grid-column-gap: 30px;
     grid-row-gap: 20px;
-  }
-  .review__form>.message>textarea{
-    max-width: 1165px;
   }
   .review__form h4,.review__form .subject,.review__form .message{
     grid-column: span 2;
@@ -1295,10 +1289,6 @@ footer>*{
 
 
 /*Adaptability start*/
-
-  @media (max-width:1280px) {
-
-  }
   @media (max-width:1024px) {
     h2{
       font-size: 38px;
