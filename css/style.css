@@ -1226,6 +1226,7 @@ footer>*{
   }
   .footer__form>div>input{
     border-color: rgba(136, 136, 136, 0.2);
+    color: gray;
   }
   .footer__form .phone{
     margin-top: 32px;
