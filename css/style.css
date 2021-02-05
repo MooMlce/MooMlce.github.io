@@ -75,6 +75,10 @@ form input, form textarea{
   background-color: rgba(0, 0, 0, 0);
   outline: none;
 }
+form input::-webkit-outer-spin-button,
+form input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
 form textarea{
   max-width: 100%;
   min-width: 100%;
